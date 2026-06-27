@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Video Centrado</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0f0f0f; /* Fondo oscuro elegante */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .video-wrapper {
+            width: 90%;
+            max-width: 850px;
+            aspect-ratio: 16 / 9; /* Mantiene la forma del reproductor */
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 12px; /* Bordes redondeados modernos */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Sombra suave */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="video-wrapper">
+        <!-- Reproductor de Google Drive incrustado correctamente -->
+        <iframe src="Arquitecto.mp4" allow="autoplay"></iframe>
+    </div>
+
+</body>
+</html>
